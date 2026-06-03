@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Renascer</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/db41e14a-fe97-491e-bcea-0f511859cbc5.png" alt="Logo Renascer">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#Home">Início</a></li>
+                <li><a href="#About">Sobre Nós</a></li>
+                <li><a href="#Apoio">Apoio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="home-container" id="Home">
+            <div class="box-home">
+                <h1 class="title">Associação Esportiva Renascer </h1>
+                <p>O projeto de futebol tem como objetivo promover a prática esportiva entre jovens, incentivando
+                    disciplina,
+                    trabalho em equipe e saúde. Através de treinos e atividades, os participantes desenvolvem
+                    habilidades dentro
+                    e fora de campo, contribuindo para o crescimento pessoal e social. Além disso, o projeto busca
+                    afastar os
+                    jovens de situações de risco, oferecendo oportunidades e inclusão por meio do esporte.</p>
+                <button class="btn-saiba">Saiba mais</button>
+            </div>
+        </div>
+
+        <div class="container-about" id="About">
+            <div class="about">
+                <img src="img/about renascer.jpg" alt="">
+                <div class="content-about">
+                    <h3>Sobre o projeto</h2>
+                        <h2>Formando cidadões dentro e fora do campo</h2>
+                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consectetur ducimus dicta
+                            repudiandae.
+                            Velit harum officiis, nobis deserunt explicabo cum molestiae laboriosam, nisi accusamus
+                            dolore vitae
+                            praesentium earum! Quam, qui.</P>
+                        <div class="infos">
+                            <div class="info-item">
+                                <i class="bx bx-group"></i>
+                                <h3>+100</h3>
+                                <p>Atletas atendidos</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="bx bx-calendar"></i>
+                                <h3>6 Anos</h3>
+                                <p>De história</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="bx bx-map"></i>
+                                <h3>Nossa cidade</h3>
+                                <p>Cidreira RS</p>
+                            </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-apoio" id="Apoio">
+            <div class="apoio">
+                <div class="como-ajudar">
+                    <h2> Como ajudar</h2>
+                    <p>Sua ajuda faz toda diferença.</p>
+                </div>
+                <div class="cards">
+                    <!-- CARD 1 -->
+                    <div class="card">
+                        <h3>Doações</h3>
+                        <p>Ajude com qualquer valor e contribua para manter o projeto ativo.</p>
+                        <a href="#" class="btn-card">Doar agora</a>
+                    </div>
+                    <!-- CARD 2 -->
+                    <div class="card">
+                        <h3>Voluntariado</h3>
+                        <p>Participe do projeto ajudando nos treinos e atividades.</p>
+                        <a href="#" class="btn-card">Quero ajudar</a>
+                    </div>
+                    <!-- CARD 3 -->
+                    <div class="card">
+                        <h3>Parcerias</h3>
+                        <p>Empresas podem apoiar com materiais, estrutura ou patrocínio.</p>
+                        <a href="#" class="btn-card">Seja parceiro</a>
+                    </div>
+            </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+
+    </footer>
+</body>
+
+<script>
+    window.addEventListener("scroll", function () {
+        const header = document.querySelector(".header");
+
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
+
+</html>
