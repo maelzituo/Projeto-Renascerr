@@ -1,0 +1,134 @@
+/* BOTÃO HAMBÚRGUER (fora do media) */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* ==========================================
+   MOBILE (até 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    /* BOTÃO HAMBÚRGUER */
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 200;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #06241b;
+        display: none;
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 150;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 1.2rem;
+    }
+
+    /* HOME */
+    .home-container {
+        height: auto;
+        padding: 120px 20px 60px;
+    }
+
+    .box-home {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .home-container h1 {
+        font-size: 1.6rem;
+    }
+
+    .home-container p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    /* ABOUT */
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-about {
+        padding: 20px;
+    }
+
+    .container-about img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-about {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .infos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* APOIO */
+    .apoio {
+        flex-direction: column;
+        gap: 30px;
+        width: 90%;
+        padding: 20px;
+    }
+
+    /* CARDS */
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
