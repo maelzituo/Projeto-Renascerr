@@ -55,11 +55,11 @@
                 <div class="content-about">
                     <h3>Sobre o projeto</h2>
                         <h2>Formando cidadões dentro e fora do campo</h2>
-                        <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex consectetur ducimus dicta
-                            repudiandae.
-                            Velit harum officiis, nobis deserunt explicabo cum molestiae laboriosam, nisi accusamus
-                            dolore vitae
-                            praesentium earum! Quam, qui.</P>
+                        <P>O projeto social Renascer, iniciado no município de Cidreira, surge como uma importante
+                            iniciativa voltada à promoção da inclusão social e ao desenvolvimento integral de crianças e
+                            adolescentes por meio do esporte. Utilizando o futebol como ferramenta principal, o projeto
+                            busca oferecer oportunidades que contribuam para a formação cidadã, disciplina e
+                            fortalecimento de valores éticos.</P>
                         <div class="infos">
                             <div class="info-item">
                                 <i class="bx bx-group"></i>
@@ -165,6 +165,8 @@
 </body>
 
 <script>
+
+    /* HEADER SCROLL */
     window.addEventListener("scroll", function () {
         const header = document.querySelector(".header");
 
@@ -175,11 +177,40 @@
         }
     });
 
+    /* MENU HAMBÚRGUER */
     const toggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
+    const navbar = document.querySelector(".navbar");
+    const icon = toggle.querySelector("i");
 
     toggle.addEventListener("click", () => {
         navbar.classList.toggle("active");
+
+        icon.classList.toggle("bx-menu");
+        icon.classList.toggle("bx-x");
+    });
+
+    /* FECHAR MENU AO CLICAR */
+    document.querySelectorAll(".navbar a").forEach(link => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+            icon.classList.add("bx-menu");
+            icon.classList.remove("bx-x");
+        });
+    });
+
+    /* ANIMAÇÃO DOS CARDS */
+    const cards = document.querySelectorAll(".card");
+
+    window.addEventListener("scroll", () => {
+        const trigger = window.innerHeight * 0.85;
+
+        cards.forEach(card => {
+            const top = card.getBoundingClientRect().top;
+
+            if (top < trigger) {
+                card.classList.add("show");
+            }
+        });
     });
 </script>
 
