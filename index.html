@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renascer Futebol Clube | Mais que futebol. Uma nova oportunidade.</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo-renascer.jpg">
     <meta name="description" content="Projeto social Renascer em Cidreira, RS. Transformando vidas de crianças e adolescentes através do futebol e cidadania.">
     
     <!-- Open Graph / SEO -->
     <meta property="og:title" content="Renascer Futebol Clube">
     <meta property="og:description" content="Mais que futebol. Uma nova oportunidade em Cidreira, RS.">
-    <meta property="og:image" content="img/background-home.jpg">
+    <meta property="og:image" content="/assets/images/background-home.jpg">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
@@ -18,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Icons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
@@ -28,7 +29,7 @@
     <!-- Navbar -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex items-center justify-between">
         <a href="#" class="flex items-center gap-3 group" aria-label="Início Renascer">
-            <img src="img/logo renascer.jpg" alt="Logo Renascer" class="h-12 w-auto transform group-hover:scale-105 transition-transform duration-300 chroma-key-logo rounded-md">
+            <img src="assets/images/logo-renascer.jpg" alt="Logo Renascer" class="h-12 w-auto transform group-hover:scale-105 transition-transform duration-300 chroma-key-logo rounded-md">
             <span class="font-display font-bold text-xl tracking-wide hidden sm:block">RENASCER</span>
         </a>
         
@@ -45,7 +46,7 @@
                 APOIAR O PROJETO
             </a>
             <button id="mobile-menu-btn" class="md:hidden text-2xl p-2 focus:outline-none focus:ring-2 focus:ring-renascer-green rounded" aria-label="Abrir menu">
-                <i class='bx bx-menu'></i>
+                <i class="bx bx-menu"></i>
             </button>
         </div>
     </nav>
@@ -53,7 +54,7 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 bg-renascer-dark/95 backdrop-blur-lg z-[60] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
         <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl p-2 focus:outline-none focus:text-renascer-green" aria-label="Fechar menu">
-            <i class='bx bx-x'></i>
+            <i class="bx bx-x"></i>
         </button>
         <ul class="flex flex-col items-center gap-8 text-2xl font-display font-semibold">
             <li><a href="#inicio" class="mobile-link hover:text-renascer-green transition-colors">Início</a></li>
@@ -71,7 +72,7 @@
             <div class="absolute inset-0 z-0">
                 <div class="absolute inset-0 bg-gradient-to-b from-renascer-dark/80 via-renascer-dark/50 to-renascer-dark z-10"></div>
                 <!-- Usando preload ou eager loading para imagem do hero -->
-                <img src="img/background-home.jpg" alt="Campo do Renascer" class="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-[pulse_10s_ease-in-out_infinite_alternate]" fetchpriority="high">
+                <img src="assets/images/background-home.jpg" alt="Campo do Renascer" class="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-[pulse_10s_ease-in-out_infinite_alternate]" fetchpriority="high">
             </div>
 
             <div class="relative z-10 container mx-auto px-6 flex flex-col items-center text-center mt-12">
@@ -90,14 +91,14 @@
                         CONHEÇA O PROJETO
                     </a>
                     <a href="#apoio" class="w-full sm:w-auto px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
-                        QUERO AJUDAR <i class='bx bx-right-arrow-alt'></i>
+                        QUERO AJUDAR <i class="bx bx-right-arrow-alt"></i>
                     </a>
                 </div>
             </div>
             
             <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 motion-safe:animate-bounce">
                 <a href="#proposito" class="text-white/50 hover:text-white transition-colors" aria-label="Rolar para baixo">
-                    <i class='bx bx-chevron-down text-3xl'></i>
+                    <i class="bx bx-chevron-down text-3xl"></i>
                 </a>
             </div>
         </section>
@@ -108,7 +109,7 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div class="order-2 lg:order-1 reveal">
                         <div class="relative rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-square">
-                            <img src="img/about renascer.jpg" alt="Atletas do projeto Renascer" class="w-full h-full object-cover" loading="lazy">
+                            <img src="assets/images/about-renascer.jpg" alt="Atletas do projeto Renascer" class="w-full h-full object-cover" loading="lazy">
                             <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl"></div>
                         </div>
                     </div>
@@ -155,7 +156,7 @@
 
                     <div class="reveal delay-200 py-8 md:py-0">
                         <div class="text-6xl md:text-8xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-4 flex justify-center items-center gap-2">
-                            <i class='bx bx-map text-5xl md:text-7xl'></i> RS
+                            <i class="bx bx-map text-5xl md:text-7xl"></i> RS
                         </div>
                         <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Cidreira, Rio Grande do Sul</div>
                     </div>
@@ -239,42 +240,42 @@
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal">
-                        <img src="img/nossaequipe.png" alt="Equipe Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                        <img src="assets/images/nossaequipe.png" alt="Equipe Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">Nossa Equipe</span>
                         </div>
                     </div>
                     
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-auto sm:row-span-2 reveal delay-100">
-                        <img src="img/foto_renascer1.jpg" alt="Treino do Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                        <img src="assets/images/foto_renascer1.jpg" alt="Treino do Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">Dedicação nos treinos</span>
                         </div>
                     </div>
                     
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-200">
-                        <img src="img/o_jogo.png" alt="O Jogo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+o_jogo.png'">
+                        <img src="assets/images/o_jogo.png" alt="O Jogo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+o_jogo.png'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">O Jogo</span>
                         </div>
                     </div>
 
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-300">
-                        <img src="img/galeria1.png" alt="Entrando em Campo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria1.png'">
+                        <img src="assets/images/galeria1.png" alt="Entrando em Campo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria1.png'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">União em Campo</span>
                         </div>
                     </div>
 
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-400">
-                        <img src="img/galeria2.png" alt="Preleção" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria2.png'">
+                        <img src="assets/images/galeria2.png" alt="Preleção" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria2.png'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">Aprendizado</span>
                         </div>
                     </div>
 
                     <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-500">
-                        <img src="img/galeria3.png" alt="Espírito de Equipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria3.png'">
+                        <img src="assets/images/galeria3.png" alt="Espírito de Equipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria3.png'">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
                             <span class="text-white font-medium text-lg">Vínculos Fortes</span>
                         </div>
@@ -294,7 +295,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal">
                         <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class='bx bx-user text-3xl text-renascer-gray'></i>
+                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
                         </div>
                         <h3 class="font-display text-xl font-bold mb-1 text-white">Equipe Técnica</h3>
                         <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
@@ -302,7 +303,7 @@
                     
                     <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-100">
                         <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class='bx bx-user text-3xl text-renascer-gray'></i>
+                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
                         </div>
                         <h3 class="font-display text-xl font-bold mb-1 text-white">Professores</h3>
                         <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
@@ -310,7 +311,7 @@
                     
                     <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-200">
                         <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class='bx bx-user text-3xl text-renascer-gray'></i>
+                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
                         </div>
                         <h3 class="font-display text-xl font-bold mb-1 text-white">Voluntários</h3>
                         <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
@@ -318,7 +319,7 @@
                     
                     <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-300">
                         <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class='bx bx-user text-3xl text-renascer-gray'></i>
+                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
                         </div>
                         <h3 class="font-display text-xl font-bold mb-1 text-white">Apoio</h3>
                         <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
@@ -338,7 +339,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal group">
                         <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class='bx bx-heart text-2xl text-renascer-green'></i>
+                            <i class="bx bx-heart text-2xl text-renascer-green"></i>
                         </div>
                         <h3 class="font-display font-bold text-2xl mb-4 text-white">Doações</h3>
                         <p class="text-renascer-gray mb-8 flex-grow">Ajude com qualquer valor e contribua para manter a estrutura, materiais e o projeto ativo.</p>
@@ -346,7 +347,7 @@
                     </div>
                     <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-100 group">
                         <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class='bx bx-group text-2xl text-renascer-green'></i>
+                            <i class="bx bx-group text-2xl text-renascer-green"></i>
                         </div>
                         <h3 class="font-display font-bold text-2xl mb-4 text-white">Voluntariado</h3>
                         <p class="text-renascer-gray mb-8 flex-grow">Apoie diretamente no campo. Participe ajudando nos treinos e atividades diárias.</p>
@@ -354,7 +355,7 @@
                     </div>
                     <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-200 group">
                         <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class='bx bx-buildings text-2xl text-renascer-green'></i>
+                            <i class="bx bx-buildings text-2xl text-renascer-green"></i>
                         </div>
                         <h3 class="font-display font-bold text-2xl mb-4 text-white">Parcerias</h3>
                         <p class="text-renascer-gray mb-8 flex-grow">Empresas podem apoiar com materiais, estrutura ou patrocínio oficial.</p>
@@ -368,7 +369,7 @@
         <section class="relative py-32 md:py-48 flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <div class="absolute inset-0 bg-renascer-dark/85 z-10"></div>
-                <img src="img/background-home.jpg" alt="Renascer" class="w-full h-full object-cover object-center scale-105" loading="lazy">
+                <img src="assets/images/background-home.jpg" alt="Renascer" class="w-full h-full object-cover object-center scale-105" loading="lazy">
             </div>
 
             <div class="relative z-10 container mx-auto px-6 text-center reveal">
@@ -390,7 +391,7 @@
                 <!-- Brand -->
                 <div class="space-y-6">
                     <div class="flex items-center gap-3">
-                        <img src="img/logo renascer.jpg" alt="Logo Renascer" class="h-12 w-auto opacity-90 chroma-key-logo rounded-md">
+                        <img src="assets/images/logo-renascer.jpg" alt="Logo Renascer" class="h-12 w-auto opacity-90 chroma-key-logo rounded-md">
                         <span class="font-display font-bold text-2xl tracking-wide text-white">RENASCER</span>
                     </div>
                     <p class="text-renascer-gray text-sm pr-4 leading-relaxed">Transformando vidas através de apoio, educação e oportunidades. Juntos podemos fazer a diferença na nossa comunidade.</p>
@@ -413,15 +414,15 @@
                     <h4 class="font-display font-bold text-lg mb-6 text-white">Contato</h4>
                     <ul class="space-y-4 text-sm text-renascer-gray font-medium">
                         <li class="flex items-center gap-3">
-                            <i class='bx bx-envelope text-lg text-renascer-green'></i>
+                            <i class="bx bx-envelope text-lg text-renascer-green"></i>
                             <a href="mailto:contato@renascer.org" class="hover:text-white transition-colors">contato@renascer.org</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <i class='bx bx-phone text-lg text-renascer-green'></i>
+                            <i class="bx bx-phone text-lg text-renascer-green"></i>
                             <a href="tel:+555195076696" class="hover:text-white transition-colors">(51) 9507-6696</a>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class='bx bx-map text-lg text-renascer-green mt-0.5'></i>
+                            <i class="bx bx-map text-lg text-renascer-green mt-0.5"></i>
                             <span>Cidreira <br> Rio Grande do Sul</span>
                         </li>
                     </ul>
@@ -432,13 +433,13 @@
                     <h4 class="font-display font-bold text-lg mb-6 text-white">Redes Sociais</h4>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/assrenascerofc/?hl=pt-br" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Siga no Instagram">
-                            <i class='bx bxl-instagram text-xl'></i>
+                            <i class="bx bxl-instagram text-xl"></i>
                         </a>
                         <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20do%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Fale pelo WhatsApp">
-                            <i class='bx bxl-whatsapp text-xl'></i>
+                            <i class="bx bxl-whatsapp text-xl"></i>
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100073883275130" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Siga no Facebook">
-                            <i class='bx bxl-facebook text-xl'></i>
+                            <i class="bx bxl-facebook text-xl"></i>
                         </a>
                     </div>
                 </div>
@@ -453,135 +454,10 @@
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20do%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-[#20bd5a] transition-all duration-300 z-50 animate-[bounce_2s_infinite]" aria-label="Fale pelo WhatsApp">
-        <i class='bx bxl-whatsapp text-3xl'></i>
+        <i class="bx bxl-whatsapp text-3xl"></i>
     </a>
 
     <!-- Scripts -->
-    <script>
-        function removeGreenBackground(imgElement) {
-            // Already processed or processing
-            if (imgElement.dataset.processed) return;
-            imgElement.dataset.processed = "true";
-            
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d', { willReadFrequently: true });
-            
-            const img = new Image();
-            img.crossOrigin = "Anonymous";
-            img.src = imgElement.src;
-            
-            img.onload = () => {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-                
-                try {
-                    const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-                    const data = imageData.data;
-                    
-                    for (let i = 0; i < data.length; i += 4) {
-                        const r = data[i];
-                        const g = data[i + 1];
-                        const b = data[i + 2];
-                        
-                        // Detect bright green (typical chroma key green)
-                        if (g > 100 && g > r * 1.3 && g > b * 1.3) {
-                            // Make pixel transparent
-                            data[i + 3] = 0;
-                        }
-                    }
-                    
-                    ctx.putImageData(imageData, 0, 0);
-                    imgElement.src = canvas.toDataURL('image/png');
-                } catch(e) {
-                    console.error("Canvas taint error, unable to process image", e);
-                }
-            };
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            // Process chroma key logos
-            const logos = document.querySelectorAll('.chroma-key-logo');
-            logos.forEach(logo => {
-                if (logo.complete) {
-                    removeGreenBackground(logo);
-                } else {
-                    logo.addEventListener('load', () => removeGreenBackground(logo));
-                }
-            });
-
-            // Navbar Scroll Effect
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    navbar.classList.add('bg-renascer-dark/95', 'backdrop-blur-md', 'shadow-2xl', 'border-b', 'border-white/5');
-                    navbar.classList.remove('py-4');
-                    navbar.classList.add('py-3');
-                } else {
-                    navbar.classList.remove('bg-renascer-dark/95', 'backdrop-blur-md', 'shadow-2xl', 'border-b', 'border-white/5');
-                    navbar.classList.add('py-4');
-                    navbar.classList.remove('py-3');
-                }
-            });
-
-            // Mobile Menu Toggle
-            const mobileBtn = document.getElementById('mobile-menu-btn');
-            const closeMenuBtn = document.getElementById('close-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileLinks = document.querySelectorAll('.mobile-link');
-
-            function toggleMenu() {
-                const isClosed = mobileMenu.classList.contains('opacity-0');
-                if (isClosed) {
-                    mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
-                    mobileMenu.setAttribute('aria-hidden', 'false');
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    mobileMenu.classList.add('opacity-0', 'pointer-events-none');
-                    mobileMenu.setAttribute('aria-hidden', 'true');
-                    document.body.style.overflow = '';
-                }
-            }
-
-            mobileBtn.addEventListener('click', toggleMenu);
-            closeMenuBtn.addEventListener('click', toggleMenu);
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', toggleMenu);
-            });
-
-            // Intersection Observer for Animations (Reveal)
-            // Respeita a preferência do usuário por movimento reduzido
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            
-            if (!prefersReducedMotion) {
-                const revealElements = document.querySelectorAll('.reveal');
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '0px',
-                    threshold: 0.15
-                };
-
-                const observer = new IntersectionObserver((entries, observer) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add('active');
-                            observer.unobserve(entry.target);
-                        }
-                    });
-                }, observerOptions);
-
-                revealElements.forEach(el => {
-                    observer.observe(el);
-                });
-            } else {
-                // Se prefers-reduced-motion for ativado, exibe tudo imediatamente sem animação
-                document.querySelectorAll('.reveal').forEach(el => {
-                    el.style.opacity = '1';
-                    el.style.transform = 'none';
-                    el.style.transition = 'none';
-                });
-            }
-        });
-    </script>
+    <script src="script.js" defer></script>
 </body>
 </html>

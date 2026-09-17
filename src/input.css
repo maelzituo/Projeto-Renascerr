@@ -24,9 +24,6 @@
     text-wrap: balance;
   }
   
-  .mask-image-b {
-    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  }
   
   .glass-panel {
     @apply bg-renascer-dark/70 backdrop-blur-md border border-renascer-green/20;

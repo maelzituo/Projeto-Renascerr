@@ -2,19 +2,15 @@
   "name": "projeto-renascerr",
   "version": "1.0.0",
   "description": "Projeto Renascer",
-  "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"tailwindcss -i ./src/input.css -o ./style.css --watch\" \"node server.js\"",
-    "start": "node server.js",
+    "dev": "concurrently \"tailwindcss -i ./src/input.css -o ./style.css --watch\" \"serve . -p 3000\"",
     "build": "tailwindcss -i ./src/input.css -o ./style.css -m"
-  },
-  "dependencies": {
-    "express": "^4.19.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.6.1",
     "concurrently": "^10.0.5",
     "postcss": "^8.5.28",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.1"
   }
 }
