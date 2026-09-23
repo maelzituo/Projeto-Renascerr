@@ -8,7 +8,8 @@ module.exports = {
         'renascer-green-dark': '#0B3D2E',
         'renascer-green': '#16A05D',
         'renascer-light': '#F5F5F5',
-        'renascer-gray': '#9A9A9A',
+        'renascer-gray': '#A3B8B0',
+        'renascer-muted': '#6B877E',
       },
       fontFamily: {
         'display': ['Outfit', 'sans-serif'],
@@ -21,4 +22,3 @@ module.exports = {
   },
   plugins: [],
 }
-

@@ -17,6 +17,10 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display tracking-tight;
   }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-renascer-green ring-offset-2 ring-offset-renascer-dark;
+  }
 }
 
 @layer utilities {
@@ -24,15 +28,15 @@
     text-wrap: balance;
   }
   
-  
   .glass-panel {
-    @apply bg-renascer-dark/70 backdrop-blur-md border border-renascer-green/20;
+    @apply bg-renascer-dark/80 backdrop-blur-md border border-white/10;
   }
   
   .reveal {
     opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    transform: translateY(24px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
   }
   
   .reveal.active {

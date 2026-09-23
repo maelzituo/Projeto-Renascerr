@@ -4,235 +4,317 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renascer Futebol Clube | Mais que futebol. Uma nova oportunidade.</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <meta name="description" content="Conheça o Renascer Futebol Clube e o nosso projeto através do esporte, da união e das oportunidades.">
-    <meta name="theme-color" content="#06241b">
     
-    <!-- Open Graph / SEO -->
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Conheça o Renascer Futebol Clube e o nosso projeto através do esporte, da união e das oportunidades em Cidreira, RS.">
+    <meta name="keywords" content="Renascer Futebol Clube, Associação Esportiva Renascer, projeto social, escolinha de futebol, Cidreira RS, esporte comunitário, inclusão social">
+    <meta name="author" content="Associação Esportiva Renascer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#06241b">
+    <link rel="canonical" href="https://projeto-renascerr.vercel.app/">
+
+    <!-- Open Graph (WhatsApp, Facebook, Instagram, LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Renascer Futebol Clube | Mais que futebol. Uma nova oportunidade.">
     <meta property="og:description" content="Conheça o Renascer Futebol Clube e o nosso projeto através do esporte, da união e das oportunidades.">
     <meta property="og:url" content="https://projeto-renascerr.vercel.app/">
     <meta property="og:image" content="https://projeto-renascerr.vercel.app/assets/images/og-preview-v2.jpg">
     <meta property="og:image:secure_url" content="https://projeto-renascerr.vercel.app/assets/images/og-preview-v2.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:alt" content="Renascer Futebol Clube">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Renascer Futebol Clube">
 
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Renascer Futebol Clube | Mais que futebol. Uma nova oportunidade.">
     <meta name="twitter:description" content="Conheça o Renascer Futebol Clube e o nosso projeto através do esporte, da união e das oportunidades.">
     <meta name="twitter:image" content="https://projeto-renascerr.vercel.app/assets/images/og-preview-v2.jpg">
+    <meta name="twitter:image:alt" content="Renascer Futebol Clube">
 
-    <!-- Fonts -->
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsClub",
+      "name": "Renascer Futebol Clube",
+      "alternateName": "Associação Esportiva Renascer",
+      "url": "https://projeto-renascerr.vercel.app/",
+      "logo": "https://projeto-renascerr.vercel.app/assets/images/logo-renascer-transparent.png",
+      "image": "https://projeto-renascerr.vercel.app/assets/images/og-preview-v2.jpg",
+      "description": "Projeto social em Cidreira, RS. Transformando vidas de crianças e adolescentes através do futebol, disciplina e cidadania.",
+      "telephone": "+5551996076696",
+      "email": "contato@renascer.org",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Cidreira",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/assrenascerofc/",
+        "https://www.facebook.com/profile.php?id=100073883275130"
+      ]
+    }
+    </script>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Icons -->
+    <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
-    <!-- Styles -->
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-renascer-dark text-renascer-light font-body overflow-x-hidden selection:bg-renascer-green selection:text-white">
 
-    <!-- Navbar -->
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex items-center justify-between">
-        <a href="#" class="flex items-center gap-3 group" aria-label="Início Renascer">
-            <img src="assets/images/logo-renascer-transparent.png" alt="Logo Renascer" class="h-12 w-auto transform group-hover:scale-105 transition-transform duration-300 rounded-md">
-            <span class="font-display font-bold text-xl tracking-wide hidden sm:block">RENASCER</span>
-        </a>
-        
-        <ul class="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
-            <li><a href="#inicio" class="hover:text-renascer-green transition-colors focus:outline-none focus:text-renascer-green">Início</a></li>
-            <li><a href="#proposito" class="hover:text-renascer-green transition-colors focus:outline-none focus:text-renascer-green">O Projeto</a></li>
-            <li><a href="#impacto" class="hover:text-renascer-green transition-colors focus:outline-none focus:text-renascer-green">Impacto</a></li>
-            <li><a href="#galeria" class="hover:text-renascer-green transition-colors focus:outline-none focus:text-renascer-green">Galeria</a></li>
-            <li><a href="#equipe" class="hover:text-renascer-green transition-colors focus:outline-none focus:text-renascer-green">Equipe</a></li>
-        </ul>
+    <!-- A11y Skip Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-5 focus:py-3 focus:bg-renascer-green focus:text-white focus:rounded-lg focus:font-bold focus:shadow-2xl">
+        Pular para o conteúdo principal
+    </a>
 
-        <div class="flex items-center gap-4">
-            <a href="#apoio" class="hidden md:inline-flex items-center justify-center bg-renascer-green text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-renascer-green-dark transition-all duration-300 transform hover:-translate-y-0.5 focus:ring-2 focus:ring-renascer-green focus:ring-offset-2 focus:ring-offset-renascer-dark">
-                APOIAR O PROJETO
+    <!-- Header / Navbar -->
+    <header>
+        <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 md:px-12 flex items-center justify-between" aria-label="Navegação Principal">
+            <a href="#inicio" class="flex items-center gap-3 group focus-visible:ring-2 focus-visible:ring-renascer-green rounded-md" aria-label="Renascer Futebol Clube - Início">
+                <img src="assets/images/logo-renascer-transparent.png" alt="Escudo Renascer Futebol Clube" class="h-11 md:h-12 w-auto transform group-hover:scale-105 transition-transform duration-300 rounded-md">
+                <div class="flex flex-col">
+                    <span class="font-display font-black text-lg md:text-xl tracking-wider text-white">RENASCER</span>
+                    <span class="text-[10px] tracking-widest text-renascer-gray uppercase -mt-1 hidden sm:block">Futebol Clube</span>
+                </div>
             </a>
-            <button id="mobile-menu-btn" class="md:hidden text-2xl p-2 focus:outline-none focus:ring-2 focus:ring-renascer-green rounded" aria-label="Abrir menu">
-                <i class="bx bx-menu"></i>
-            </button>
-        </div>
-    </nav>
+            
+            <ul class="hidden lg:flex items-center gap-7 text-sm font-medium tracking-wide">
+                <li><a href="#inicio" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Início</a></li>
+                <li><a href="#quem-somos" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Quem Somos</a></li>
+                <li><a href="#historia" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">História</a></li>
+                <li><a href="#impacto" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Impacto</a></li>
+                <li><a href="#galeria" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Galeria</a></li>
+                <li><a href="#equipe" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Equipe</a></li>
+                <li><a href="#transparencia" class="text-white/90 hover:text-renascer-green transition-colors py-1 focus-visible:text-renascer-green">Transparência</a></li>
+            </ul>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 bg-renascer-dark/95 backdrop-blur-lg z-[60] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
-        <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl p-2 focus:outline-none focus:text-renascer-green" aria-label="Fechar menu">
+            <div class="flex items-center gap-4">
+                <a href="#apoio" class="hidden sm:inline-flex items-center justify-center bg-renascer-green text-white px-6 py-2.5 rounded-full font-semibold text-sm hover:bg-renascer-green-dark transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg shadow-renascer-green/20">
+                    Apoiar o Projeto
+                </a>
+                <button id="mobile-menu-btn" class="lg:hidden text-3xl p-2 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-renascer-green rounded-lg" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="bx bx-menu"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Modal -->
+    <div id="mobile-menu" class="fixed inset-0 bg-renascer-dark/98 backdrop-blur-xl z-[60] flex flex-col justify-center items-center opacity-0 pointer-events-none transition-opacity duration-300" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-4xl p-2 text-white/80 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-renascer-green rounded-lg" aria-label="Fechar menu">
             <i class="bx bx-x"></i>
         </button>
-        <ul class="flex flex-col items-center gap-8 text-2xl font-display font-semibold">
-            <li><a href="#inicio" class="mobile-link hover:text-renascer-green transition-colors">Início</a></li>
-            <li><a href="#proposito" class="mobile-link hover:text-renascer-green transition-colors">O Projeto</a></li>
-            <li><a href="#impacto" class="mobile-link hover:text-renascer-green transition-colors">Impacto</a></li>
-            <li><a href="#galeria" class="mobile-link hover:text-renascer-green transition-colors">Galeria</a></li>
-            <li><a href="#equipe" class="mobile-link hover:text-renascer-green transition-colors">Equipe</a></li>
-            <li><a href="#apoio" class="mobile-link text-renascer-green hover:text-white transition-colors">Como Ajudar</a></li>
+        <ul class="flex flex-col items-center gap-6 text-xl md:text-2xl font-display font-semibold">
+            <li><a href="#inicio" class="mobile-link text-white hover:text-renascer-green transition-colors">Início</a></li>
+            <li><a href="#quem-somos" class="mobile-link text-white hover:text-renascer-green transition-colors">Quem Somos</a></li>
+            <li><a href="#historia" class="mobile-link text-white hover:text-renascer-green transition-colors">Nossa História</a></li>
+            <li><a href="#impacto" class="mobile-link text-white hover:text-renascer-green transition-colors">Nosso Impacto</a></li>
+            <li><a href="#galeria" class="mobile-link text-white hover:text-renascer-green transition-colors">Galeria</a></li>
+            <li><a href="#equipe" class="mobile-link text-white hover:text-renascer-green transition-colors">Equipe</a></li>
+            <li><a href="#transparencia" class="mobile-link text-white hover:text-renascer-green transition-colors">Transparência</a></li>
+            <li class="pt-4">
+                <a href="#apoio" class="mobile-link inline-flex items-center justify-center bg-renascer-green text-white px-8 py-3 rounded-full text-base font-bold shadow-lg">
+                    Apoiar o Projeto
+                </a>
+            </li>
         </ul>
     </div>
 
-    <main>
+    <!-- Main Content -->
+    <main id="main-content">
+        
         <!-- Hero Section -->
-        <section id="inicio" class="relative min-h-[100svh] flex items-center justify-center pt-20 overflow-hidden">
+        <section id="inicio" class="relative min-h-[100svh] flex items-center justify-center pt-24 pb-16 overflow-hidden">
+            <!-- Background Image with Gradient Overlay -->
             <div class="absolute inset-0 z-0">
-                <div class="absolute inset-0 bg-gradient-to-b from-renascer-dark/80 via-renascer-dark/50 to-renascer-dark z-10"></div>
-                <!-- Usando preload ou eager loading para imagem do hero -->
-                <img src="assets/images/background-home.jpg" alt="Campo do Renascer" class="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-[pulse_10s_ease-in-out_infinite_alternate]" fetchpriority="high">
+                <div class="absolute inset-0 bg-gradient-to-b from-renascer-dark/85 via-renascer-dark/60 to-renascer-dark z-10"></div>
+                <img src="assets/images/background-home.jpg" alt="Campo do Renascer Futebol Clube em Cidreira" class="w-full h-full object-cover object-center scale-105 transform motion-safe:animate-[pulse_10s_ease-in-out_infinite_alternate]" fetchpriority="high">
             </div>
 
-            <div class="relative z-10 container mx-auto px-6 flex flex-col items-center text-center mt-12">
+            <div class="relative z-10 container mx-auto px-6 flex flex-col items-center text-center mt-6">
+                <!-- Location Indicator -->
                 <div class="reveal">
-                    <span class="inline-block py-1.5 px-4 border border-renascer-green/50 rounded-full text-xs font-semibold tracking-widest text-renascer-green mb-6 uppercase">Cidreira • RS</span>
+                    <span class="inline-flex items-center gap-2 py-1 px-4 rounded-full text-xs font-semibold tracking-wider text-renascer-green border border-renascer-green/40 bg-renascer-dark/60 backdrop-blur-sm mb-6 uppercase">
+                        <i class="bx bx-map text-sm"></i> Cidreira • Rio Grande do Sul
+                    </span>
                 </div>
-                <h1 class="font-display font-black text-6xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 reveal delay-100">
+
+                <h1 class="font-display font-black text-6xl sm:text-7xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 text-white reveal delay-100">
                     RENASCER
                 </h1>
-                <p class="text-xl md:text-3xl font-medium text-renascer-light/90 max-w-2xl text-balance reveal delay-200">
-                    Mais que futebol.<br/>Uma <span class="text-renascer-green">nova oportunidade</span>.
+                
+                <p class="text-xl md:text-3xl font-medium text-renascer-light/95 max-w-2xl text-balance reveal delay-200 leading-snug">
+                    Mais que futebol.<br/>Uma <span class="text-renascer-green font-semibold">nova oportunidade</span>.
                 </p>
                 
-                <div class="mt-12 flex flex-col sm:flex-row items-center gap-4 reveal delay-300 w-full sm:w-auto px-6 sm:px-0">
-                    <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" class="w-full sm:w-auto px-8 py-4 bg-white text-renascer-dark font-bold rounded-full hover:bg-gray-200 transition-colors">
-                        CONHEÇA O PROJETO
+                <p class="mt-4 text-base md:text-lg text-renascer-gray max-w-xl text-balance reveal delay-200">
+                    Associação Esportiva dedicada à formação cidadã, inclusão social e desenvolvimento de crianças e jovens através do esporte.
+                </p>
+
+                <div class="mt-10 flex flex-col sm:flex-row items-center gap-4 reveal delay-300 w-full sm:w-auto px-4 sm:px-0">
+                    <a href="#quem-somos" class="w-full sm:w-auto px-8 py-4 bg-white text-renascer-dark font-bold rounded-full hover:bg-gray-100 transition-all duration-300 shadow-xl text-center">
+                        Conheça o Projeto
                     </a>
-                    <a href="#apoio" class="w-full sm:w-auto px-8 py-4 border border-white/20 text-white font-bold rounded-full hover:bg-white/10 transition-colors flex items-center justify-center gap-2">
-                        QUERO AJUDAR <i class="bx bx-right-arrow-alt"></i>
+                    <a href="#apoio" class="w-full sm:w-auto px-8 py-4 border border-white/30 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 flex items-center justify-center gap-2 text-center">
+                        Como Ajudar <i class="bx bx-right-arrow-alt text-xl"></i>
                     </a>
+                </div>
+
+                <!-- Quick Proof Badges -->
+                <div class="mt-14 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-3 gap-6 sm:gap-12 text-center max-w-2xl reveal delay-400">
+                    <div>
+                        <div class="font-display font-bold text-2xl sm:text-3xl text-white">+100</div>
+                        <div class="text-xs text-renascer-gray uppercase tracking-wider font-semibold">Atletas Atendidos</div>
+                    </div>
+                    <div>
+                        <div class="font-display font-bold text-2xl sm:text-3xl text-white">6 Anos</div>
+                        <div class="text-xs text-renascer-gray uppercase tracking-wider font-semibold">De Atuação</div>
+                    </div>
+                    <div class="col-span-2 sm:col-span-1">
+                        <div class="font-display font-bold text-2xl sm:text-3xl text-renascer-green">100% Gratuito</div>
+                        <div class="text-xs text-renascer-gray uppercase tracking-wider font-semibold">Para a Comunidade</div>
+                    </div>
                 </div>
             </div>
             
-            <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 motion-safe:animate-bounce">
-                <a href="#proposito" class="text-white/50 hover:text-white transition-colors" aria-label="Rolar para baixo">
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 motion-safe:animate-bounce hidden md:block">
+                <a href="#quem-somos" class="text-white/60 hover:text-white transition-colors" aria-label="Rolar para a seção Quem Somos">
                     <i class="bx bx-chevron-down text-3xl"></i>
                 </a>
             </div>
         </section>
 
-        <!-- O Propósito -->
-        <section id="proposito" class="py-24 md:py-32 relative bg-renascer-dark">
+        <!-- Quem Somos -->
+        <section id="quem-somos" class="py-24 md:py-32 relative bg-renascer-dark">
             <div class="container mx-auto px-6">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    
                     <div class="order-2 lg:order-1 reveal">
-                        <div class="relative rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-square">
-                            <img src="assets/images/about-renascer.jpg" alt="Atletas do projeto Renascer" class="w-full h-full object-cover" loading="lazy">
-                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/5] lg:aspect-square shadow-2xl">
+                            <img src="assets/images/about-renascer.jpg" alt="Atletas e participantes do projeto Renascer Futebol Clube reunidos" class="w-full h-full object-cover" loading="lazy">
+                            <div class="absolute inset-0 bg-gradient-to-t from-renascer-dark/80 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-renascer-dark/80 backdrop-blur-md border border-white/10 text-xs text-renascer-gray">
+                                <span class="font-semibold text-white block text-sm mb-1">Inclusão em Cidreira/RS</span>
+                                Proporcionando ambiente seguro e acolhedor para crianças e jovens através do esporte.
+                            </div>
                         </div>
                     </div>
                     
                     <div class="order-1 lg:order-2 space-y-8 reveal delay-100">
-                        <h2 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight">
-                            O futebol é o meio.<br>
-                            <span class="text-renascer-green">A transformação é o objetivo.</span>
-                        </h2>
-                        
-                        <div class="space-y-6 text-lg text-renascer-gray font-light">
-                            <p>O projeto social Renascer, nascido em Cidreira, surge como uma iniciativa vital para a inclusão social e o desenvolvimento integral de crianças e adolescentes.</p>
-                            <p>Utilizamos o campo não apenas para treinar atletas, mas para formar cidadãos. O esporte ensina disciplina, fortalece valores éticos e afasta os jovens de situações de risco, criando um ambiente seguro de pertencimento e esperança.</p>
+                        <div>
+                            <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Quem Somos</span>
+                            <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-tight text-white mt-2">
+                                O futebol é o meio.<br>
+                                <span class="text-renascer-green">A transformação é o objetivo.</span>
+                            </h2>
                         </div>
                         
-                        <div class="pt-6">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-px bg-renascer-green"></div>
-                                <span class="text-sm font-semibold tracking-widest text-white uppercase">Formando Cidadãos</span>
+                        <div class="space-y-5 text-base sm:text-lg text-renascer-gray font-normal leading-relaxed">
+                            <p>
+                                A <strong class="text-white font-semibold">Associação Esportiva Renascer</strong> (Renascer Futebol Clube) nasceu no município de Cidreira, no litoral norte do Rio Grande do Sul, com a nobre missão de transformar realidades e construir caminhos de dignidade para crianças e adolescentes da comunidade.
+                            </p>
+                            <p>
+                                Entendemos que o campo de futebol vai muito além das quatro linhas. O esporte é uma ferramenta viva de inclusão social: ensina disciplina, cooperação mútua, respeito aos colegas e adultos, e afasta nossos jovens da vulnerabilidade social.
+                            </p>
+                            <p>
+                                Todas as atividades são oferecidas de forma totalmente gratuita às famílias, promovendo bem-estar, saúde física e formação moral sólida para cada participante.
+                            </p>
+                        </div>
+                        
+                        <!-- Pilares Institucionais -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <i class="bx bx-shield-quarter text-2xl text-renascer-green mb-2"></i>
+                                <h3 class="font-display font-bold text-white text-base">Valores & Ética</h3>
+                                <p class="text-xs text-renascer-gray mt-1">Disciplina, respeito e espírito de equipe em todas as práticas.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <i class="bx bx-group text-2xl text-renascer-green mb-2"></i>
+                                <h3 class="font-display font-bold text-white text-base">Comunidade</h3>
+                                <p class="text-xs text-renascer-gray mt-1">Integração ativa entre atletas, educadores e famílias de Cidreira.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white/5 border border-white/10">
+                                <i class="bx bx-run text-2xl text-renascer-green mb-2"></i>
+                                <h3 class="font-display font-bold text-white text-base">Oportunidade</h3>
+                                <p class="text-xs text-renascer-gray mt-1">Acesso livre e gratuito a treinos esportivos e cidadania.</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- O Impacto -->
-        <section id="impacto" class="py-24 bg-renascer-green-dark relative overflow-hidden">
-            <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[600px] h-[600px] bg-renascer-green/20 rounded-full blur-[120px] pointer-events-none" aria-hidden="true"></div>
-            <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] bg-renascer-dark/40 rounded-full blur-[80px] pointer-events-none" aria-hidden="true"></div>
-
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center">
-                    
-                    <div class="reveal py-8 md:py-0">
-                        <div class="text-6xl md:text-8xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-4">+100</div>
-                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Atletas Atendidos</div>
-                    </div>
-
-                    <div class="reveal delay-100 py-8 md:py-0">
-                        <div class="text-6xl md:text-8xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-4">6</div>
-                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Anos de História</div>
-                    </div>
-
-                    <div class="reveal delay-200 py-8 md:py-0">
-                        <div class="text-6xl md:text-8xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-b from-white to-white/50 mb-4 flex justify-center items-center gap-2">
-                            <i class="bx bx-map text-5xl md:text-7xl"></i> RS
-                        </div>
-                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Cidreira, Rio Grande do Sul</div>
-                    </div>
 
                 </div>
             </div>
         </section>
 
-        <!-- O Caminho -->
-        <section id="caminho" class="py-24 md:py-32 bg-renascer-dark overflow-hidden">
+        <!-- Nossa História / A Jornada -->
+        <section id="historia" class="py-24 md:py-32 bg-[#041611] relative overflow-hidden">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-20 reveal">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">A Jornada</h2>
-                    <p class="text-renascer-gray text-lg max-w-2xl mx-auto">Cada passo no campo é um degrau para o futuro.</p>
+                <div class="text-center mb-16 reveal max-w-2xl mx-auto">
+                    <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Nossa Trajetória</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-2 mb-4">A Jornada do Renascer</h2>
+                    <p class="text-renascer-gray text-base sm:text-lg">Cada passo no gramado representa um degrau na construção de um futuro com mais dignidade.</p>
                 </div>
 
                 <div class="relative max-w-5xl mx-auto">
-                    <!-- Line -->
-                    <div class="hidden md:block absolute top-6 left-0 w-full h-px bg-white/10 -translate-y-1/2"></div>
+                    <!-- Linha conectora Desktop -->
+                    <div class="hidden md:block absolute top-6 left-0 w-full h-px bg-white/10 -translate-y-1/2" aria-hidden="true"></div>
                     
-                    <!-- Vertical Line Mobile -->
-                    <div class="md:hidden absolute top-0 bottom-0 left-6 w-px bg-white/10"></div>
+                    <!-- Linha conectora Mobile -->
+                    <div class="md:hidden absolute top-0 bottom-0 left-6 w-px bg-white/10" aria-hidden="true"></div>
                     
                     <div class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-6 relative z-10 pl-16 md:pl-0">
                         
-                        <!-- Steps -->
+                        <!-- Passo 01 -->
                         <div class="flex flex-col items-start md:items-center text-left md:text-center reveal relative">
-                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-xl">01</div>
-                            
-                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-xl mb-6">01</div>
-                            <h3 class="font-display font-bold text-2xl mb-2 text-white">CHEGAR</h3>
-                            <p class="text-renascer-gray text-sm">O acolhimento e o primeiro contato com o time.</p>
+                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-lg text-white">01</div>
+                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-lg text-white mb-6">01</div>
+                            <h3 class="font-display font-bold text-xl mb-2 text-white">Acolher</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">Abertura de portas e acolhimento de cada jovem no projeto comunitário.</p>
                         </div>
 
+                        <!-- Passo 02 -->
                         <div class="flex flex-col items-start md:items-center text-left md:text-center reveal delay-100 relative">
-                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-xl">02</div>
-                            
-                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-xl mb-6">02</div>
-                            <h3 class="font-display font-bold text-2xl mb-2 text-white">TREINAR</h3>
-                            <p class="text-renascer-gray text-sm">Disciplina e dedicação dentro das quatro linhas.</p>
+                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-lg text-white">02</div>
+                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-lg text-white mb-6">02</div>
+                            <h3 class="font-display font-bold text-xl mb-2 text-white">Treinar</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">Rotina de treinos que desenvolve fundamentos esportivos e saúde física.</p>
                         </div>
 
+                        <!-- Passo 03 -->
                         <div class="flex flex-col items-start md:items-center text-left md:text-center reveal delay-200 relative">
-                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-xl">03</div>
-                            
-                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-xl mb-6">03</div>
-                            <h3 class="font-display font-bold text-2xl mb-2 text-white">APRENDER</h3>
-                            <p class="text-renascer-gray text-sm">Trabalho em equipe e respeito ao próximo.</p>
+                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-lg text-white">03</div>
+                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-lg text-white mb-6">03</div>
+                            <h3 class="font-display font-bold text-xl mb-2 text-white">Aprender</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">Prática de respeito mútuo, trabalho em equipe e liderança positiva.</p>
                         </div>
 
+                        <!-- Passo 04 -->
                         <div class="flex flex-col items-start md:items-center text-left md:text-center reveal delay-300 relative">
-                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-xl">04</div>
-                            
-                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-xl mb-6">04</div>
-                            <h3 class="font-display font-bold text-2xl mb-2 text-white">EVOLUIR</h3>
-                            <p class="text-renascer-gray text-sm">Desenvolvimento físico, mental e social.</p>
+                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green flex items-center justify-center font-display font-bold text-lg text-white">04</div>
+                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-dark border-2 border-renascer-green items-center justify-center font-display font-bold text-lg text-white mb-6">04</div>
+                            <h3 class="font-display font-bold text-xl mb-2 text-white">Evoluir</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">Desenvolvimento integral do caráter e preparação para a vida cidadã.</p>
                         </div>
 
-                        <div class="flex flex-col items-start md:items-center text-left md:text-center reveal delay-[400ms] relative">
-                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-green text-white shadow-[0_0_15px_rgba(22,160,93,0.5)] flex items-center justify-center font-display font-bold text-xl">05</div>
-                            
-                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-green text-white shadow-[0_0_15px_rgba(22,160,93,0.5)] items-center justify-center font-display font-bold text-xl mb-6">05</div>
-                            <h3 class="font-display font-bold text-2xl mb-2 text-renascer-green">TRANSFORMAR</h3>
-                            <p class="text-renascer-gray text-sm">Uma nova perspectiva para a vida toda.</p>
+                        <!-- Passo 05 -->
+                        <div class="flex flex-col items-start md:items-center text-left md:text-center reveal delay-400 relative">
+                            <div class="md:hidden absolute -left-16 w-12 h-12 rounded-full bg-renascer-green text-white shadow-[0_0_20px_rgba(22,160,93,0.5)] flex items-center justify-center font-display font-bold text-lg">05</div>
+                            <div class="hidden md:flex w-12 h-12 rounded-full bg-renascer-green text-white shadow-[0_0_20px_rgba(22,160,93,0.5)] items-center justify-center font-display font-bold text-lg mb-6">05</div>
+                            <h3 class="font-display font-bold text-xl mb-2 text-renascer-green">Transformar</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">Impacto duradouro no jovem, na família e em toda a comunidade local.</p>
                         </div>
 
                     </div>
@@ -240,232 +322,469 @@
             </div>
         </section>
 
-        <!-- Galeria -->
+        <!-- Nosso Impacto -->
+        <section id="impacto" class="py-24 bg-renascer-green-dark relative overflow-hidden">
+            <div class="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[500px] h-[500px] bg-renascer-green/20 rounded-full blur-[120px] pointer-events-none" aria-hidden="true"></div>
+            <div class="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[400px] h-[400px] bg-renascer-dark/40 rounded-full blur-[80px] pointer-events-none" aria-hidden="true"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-16 reveal max-w-xl mx-auto">
+                    <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Indicadores Reais</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl text-white mt-1">Nosso Impacto em Números</h2>
+                    <p class="text-renascer-gray text-sm sm:text-base mt-2">Dados concretos que comprovam a dedicação diária ao esporte e à juventude.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 divide-y md:divide-y-0 md:divide-x divide-white/10 text-center">
+                    
+                    <div class="reveal py-6 md:py-0">
+                        <div class="text-5xl md:text-7xl font-display font-bold text-white mb-2">+100</div>
+                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Atletas Atendidos</div>
+                        <p class="text-xs text-renascer-gray mt-2 px-4">Crianças e adolescentes integrados ativamente nas rotinas de treinamento.</p>
+                    </div>
+
+                    <div class="reveal delay-100 py-6 md:py-0">
+                        <div class="text-5xl md:text-7xl font-display font-bold text-white mb-2">6</div>
+                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Anos de Atuação</div>
+                        <p class="text-xs text-renascer-gray mt-2 px-4">Trajetória sólida e ininterrupta de trabalho social em Cidreira/RS.</p>
+                    </div>
+
+                    <div class="reveal delay-200 py-6 md:py-0">
+                        <div class="text-5xl md:text-7xl font-display font-bold text-white mb-2">100%</div>
+                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Gratuito</div>
+                        <p class="text-xs text-renascer-gray mt-2 px-4">Nenhuma cobrança de mensalidade para garantir acesso a todas as famílias.</p>
+                    </div>
+
+                    <div class="reveal delay-300 py-6 md:py-0">
+                        <div class="text-5xl md:text-7xl font-display font-bold text-white mb-2 flex justify-center items-center gap-2">
+                            <i class="bx bx-map text-4xl md:text-5xl text-renascer-green"></i> RS
+                        </div>
+                        <div class="text-sm font-bold tracking-widest text-renascer-green uppercase">Cidreira, Litoral RS</div>
+                        <p class="text-xs text-renascer-gray mt-2 px-4">Presença comunitária e raízes fortes no litoral norte gaúcho.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Momentos -->
         <section id="galeria" class="py-24 md:py-32 bg-[#041611]">
             <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 reveal">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 reveal gap-6">
                     <div>
-                        <h2 class="font-display font-bold text-4xl md:text-5xl mb-4 text-white">Por Trás da Camisa</h2>
-                        <p class="text-renascer-gray text-lg max-w-xl text-balance">Momentos de união, garra e muita dedicação no dia a dia do projeto.</p>
+                        <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Galeria do Projeto</span>
+                        <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-1 mb-2">Por Trás da Camisa</h2>
+                        <p class="text-renascer-gray text-base max-w-xl">Momentos autênticos de união, determinação e alegria nas atividades do Renascer.</p>
+                    </div>
+
+                    <!-- Category Filters -->
+                    <div class="flex flex-wrap items-center gap-2 p-1.5 rounded-xl bg-renascer-dark/80 border border-white/10" role="tablist" aria-label="Filtros da Galeria">
+                        <button type="button" data-gallery-filter="all" aria-pressed="true" class="px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 bg-renascer-green text-white shadow-md">
+                            Todos
+                        </button>
+                        <button type="button" data-gallery-filter="treinos" aria-pressed="false" class="px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 bg-white/5 text-renascer-gray hover:text-white">
+                            Treinos
+                        </button>
+                        <button type="button" data-gallery-filter="jogos" aria-pressed="false" class="px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 bg-white/5 text-renascer-gray hover:text-white">
+                            Jogos
+                        </button>
+                        <button type="button" data-gallery-filter="equipe" aria-pressed="false" class="px-4 py-2 text-xs font-semibold rounded-lg transition-all duration-200 bg-white/5 text-renascer-gray hover:text-white">
+                            Equipe
+                        </button>
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal">
-                        <img src="assets/images/nossaequipe.png" alt="Equipe Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    
+                    <!-- Item 1: Nossa Equipe -->
+                    <div data-gallery-item="equipe" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square bg-renascer-dark/80 border border-white/10 reveal transition-all duration-300">
+                        <img src="assets/images/nossaequipe.png" alt="Equipe de jovens atletas do Renascer Futebol Clube reunidos após atividade em Cidreira" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">Nossa Equipe</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Equipe & Comunidade</span>
+                                <h3 class="text-white font-display font-bold text-lg">União que Transforma</h3>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-auto sm:row-span-2 reveal delay-100">
-                        <img src="assets/images/foto_renascer1.jpg" alt="Treino do Renascer" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
+                    <!-- Item 2: Dedicação nos Treinos -->
+                    <div data-gallery-item="treinos" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-auto sm:row-span-2 bg-renascer-dark/80 border border-white/10 reveal delay-100 transition-all duration-300">
+                        <img src="assets/images/foto_renascer1.jpg" alt="Atletas do projeto Renascer durante treino com coletes no gramado" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">Dedicação nos treinos</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Treinamento</span>
+                                <h3 class="text-white font-display font-bold text-lg">Dedicação nas Quatro Linhas</h3>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-200">
-                        <img src="assets/images/o_jogo.png" alt="O Jogo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+o_jogo.png'">
+                    <!-- Item 3: O Jogo -->
+                    <div data-gallery-item="jogos" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square bg-renascer-dark/80 border border-white/10 reveal delay-200 transition-all duration-300">
+                        <img src="assets/images/o_jogo.png" alt="Partida com atletas do projeto em disputa de bola" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">O Jogo</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Partidas</span>
+                                <h3 class="text-white font-display font-bold text-lg">Competição Saudável</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-300">
-                        <img src="assets/images/galeria1.png" alt="Entrando em Campo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria1.png'">
+                    <!-- Item 4: Entrando em Campo -->
+                    <div data-gallery-item="jogos" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square bg-renascer-dark/80 border border-white/10 reveal delay-300 transition-all duration-300">
+                        <img src="assets/images/galeria1.png" alt="Atletas do Renascer alinhados para início de jogo" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">União em Campo</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Entrando em Campo</span>
+                                <h3 class="text-white font-display font-bold text-lg">Respeito e Concentração</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-400">
-                        <img src="assets/images/galeria2.png" alt="Preleção" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria2.png'">
+                    <!-- Item 5: Preleção -->
+                    <div data-gallery-item="treinos" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square bg-renascer-dark/80 border border-white/10 reveal delay-400 transition-all duration-300">
+                        <img src="assets/images/galeria2.png" alt="Momento de orientação e conversa educativa com o time" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">Aprendizado</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Valores</span>
+                                <h3 class="text-white font-display font-bold text-lg">Preleção e Aprendizado</h3>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square reveal delay-500">
-                        <img src="assets/images/galeria3.png" alt="Espírito de Equipe" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" onerror="this.src='https://placehold.co/600x400/16A05D/FFFFFF?text=Falta+Upload+galeria3.png'">
+                    <!-- Item 6: Espírito de Equipe -->
+                    <div data-gallery-item="equipe" class="group relative rounded-2xl overflow-hidden aspect-[4/3] sm:aspect-square bg-renascer-dark/80 border border-white/10 reveal delay-500 transition-all duration-300">
+                        <img src="assets/images/galeria3.png" alt="Confraternização e celebração entre os jovens do projeto" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                            <span class="text-white font-medium text-lg">Vínculos Fortes</span>
+                            <div>
+                                <span class="text-xs uppercase tracking-wider text-renascer-green font-bold">Convivência</span>
+                                <h3 class="text-white font-display font-bold text-lg">Vínculos para Toda a Vida</h3>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Equipe -->
+        <!-- Equipe Institucional (Quem Faz Acontecer) -->
         <section id="equipe" class="py-24 md:py-32 bg-renascer-dark">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl mb-4">Quem Faz Acontecer</h2>
-                    <p class="text-renascer-gray text-lg max-w-2xl mx-auto">A dedicação da nossa equipe transforma o projeto em realidade todos os dias.</p>
+                <div class="text-center mb-16 reveal max-w-2xl mx-auto">
+                    <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Corpo Institucional</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl text-white mt-1 mb-3">Quem Faz Acontecer</h2>
+                    <p class="text-renascer-gray text-base sm:text-lg">Estrutura organizada de dedicação, voluntariado e responsabilidade com o desenvolvimento dos jovens.</p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal">
-                        <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- FRENTE 1 -->
+                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal flex flex-col justify-between hover:border-renascer-green/40 transition-colors">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 mx-auto mb-6 flex items-center justify-center text-renascer-green text-3xl">
+                                <i class="bx bx-shield-alt-2"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-renascer-green uppercase tracking-wider block mb-1">Gestão Social</span>
+                            <h3 class="font-display text-xl font-bold mb-3 text-white">Coordenação Geral</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">
+                                Responsável pelo direcionamento institucional, planejamento de ações comunitárias e salvaguarda dos princípios éticos do projeto.
+                            </p>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-1 text-white">Equipe Técnica</h3>
-                        <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-renascer-gray">
+                            Associação Esportiva Renascer
+                        </div>
                     </div>
                     
-                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-100">
-                        <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
+                    <!-- FRENTE 2 -->
+                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-100 flex flex-col justify-between hover:border-renascer-green/40 transition-colors">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 mx-auto mb-6 flex items-center justify-center text-renascer-green text-3xl">
+                                <i class="bx bx-football"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-renascer-green uppercase tracking-wider block mb-1">Formação Esportiva</span>
+                            <h3 class="font-display text-xl font-bold mb-3 text-white">Comissão Técnica</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">
+                                Condução dos treinamentos com foco nos fundamentos do futebol, disciplina esportiva, respeito aos companheiros e preparo físico.
+                            </p>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-1 text-white">Professores</h3>
-                        <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-renascer-gray">
+                            Instrutores e Educadores
+                        </div>
                     </div>
                     
-                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-200">
-                        <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
+                    <!-- FRENTE 3 -->
+                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-200 flex flex-col justify-between hover:border-renascer-green/40 transition-colors">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 mx-auto mb-6 flex items-center justify-center text-renascer-green text-3xl">
+                                <i class="bx bx-group"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-renascer-green uppercase tracking-wider block mb-1">Integração</span>
+                            <h3 class="font-display text-xl font-bold mb-3 text-white">Apoio às Famílias</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">
+                                Diálogo contínuo com os responsáveis, acompanhamento do rendimento escolar e presença próxima no cotidiano das crianças.
+                            </p>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-1 text-white">Voluntários</h3>
-                        <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-renascer-gray">
+                            Comunidade de Cidreira/RS
+                        </div>
                     </div>
                     
-                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-300">
-                        <div class="w-20 h-20 rounded-full bg-white/5 mx-auto mb-6 flex items-center justify-center">
-                            <i class="bx bx-user text-3xl text-renascer-gray"></i>
+                    <!-- FRENTE 4 -->
+                    <div class="glass-panel rounded-2xl p-8 text-center border border-white/10 reveal delay-300 flex flex-col justify-between hover:border-renascer-green/40 transition-colors">
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-white/5 mx-auto mb-6 flex items-center justify-center text-renascer-green text-3xl">
+                                <i class="bx bx-heart"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-renascer-green uppercase tracking-wider block mb-1">Solidariedade</span>
+                            <h3 class="font-display text-xl font-bold mb-3 text-white">Rede de Voluntários</h3>
+                            <p class="text-renascer-gray text-sm leading-relaxed">
+                                Cidadãos e apoiadores locais que dedicam seu tempo na logística dos jogos, distribuição de lanches e organização dos eventos.
+                            </p>
                         </div>
-                        <h3 class="font-display text-xl font-bold mb-1 text-white">Apoio</h3>
-                        <p class="text-renascer-gray text-sm">Perfil em atualização.</p>
+                        <div class="mt-6 pt-4 border-t border-white/5 text-xs text-renascer-gray">
+                            Força Comunitária Ativa
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <!-- Como Ajudar -->
+        <!-- Como Ajudar (Apoio & Parcerias) -->
         <section id="apoio" class="py-24 md:py-32 bg-renascer-green-dark">
             <div class="container mx-auto px-6">
-                <div class="text-center mb-16 reveal">
-                    <h2 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl mb-4 text-white">Faça parte do próximo capítulo.</h2>
-                    <p class="text-renascer-light/80 text-lg max-w-2xl mx-auto text-balance">Sua ajuda é o que mantém este projeto vivo. Escolha como deseja transformar realidades.</p>
+                <div class="text-center mb-16 reveal max-w-2xl mx-auto">
+                    <span class="text-xs font-bold tracking-widest text-white/80 uppercase">Como Apoiar</span>
+                    <h2 class="font-display font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mt-1 mb-4">
+                        Faça parte do próximo capítulo.
+                    </h2>
+                    <p class="text-renascer-light/90 text-base sm:text-lg text-balance">
+                        Sua participação mantém este projeto vivo e gratuito para as crianças de Cidreira. Escolha como deseja colaborar:
+                    </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal group">
-                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class="bx bx-heart text-2xl text-renascer-green"></i>
+                    
+                    <!-- Card 1: Doações -->
+                    <div class="bg-renascer-dark/90 backdrop-blur-md border border-white/15 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal group shadow-2xl">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-renascer-green/20 transition-colors">
+                            <i class="bx bx-donate-heart text-3xl text-renascer-green"></i>
                         </div>
-                        <h3 class="font-display font-bold text-2xl mb-4 text-white">Doações</h3>
-                        <p class="text-renascer-gray mb-8 flex-grow">Ajude com qualquer valor e contribua para manter a estrutura, materiais e o projeto ativo.</p>
-                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20fazer%20uma%20doa%C3%A7%C3%A3o%20para%20ajudar%20o%20projeto." target="_blank" class="block w-full py-4 text-center bg-renascer-green hover:bg-renascer-green-dark text-white font-bold rounded-xl transition-colors">Doar Agora</a>
+                        <span class="text-xs uppercase tracking-wider text-renascer-green font-bold mb-1">Apoio Financeiro & Material</span>
+                        <h3 class="font-display font-bold text-2xl mb-3 text-white">Doações</h3>
+                        <p class="text-renascer-gray mb-6 flex-grow text-sm leading-relaxed">
+                            Contribua para a manutenção de materiais esportivos (bolas, coletes, cones), lanches para os atletas pós-treino e transporte para jogos.
+                        </p>
+                        
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 mb-6 text-xs text-renascer-gray space-y-1">
+                            <span class="text-white font-semibold block">Contribuição Segura via PIX:</span>
+                            <p>Solicite a chave oficial diretamente à coordenação para emissão do comprovante institucional.</p>
+                        </div>
+
+                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20fazer%20uma%20doa%C3%A7%C3%A3o%20para%20ajudar%20o%20projeto." target="_blank" rel="noopener noreferrer" class="block w-full py-4 text-center bg-renascer-green hover:bg-renascer-green-dark text-white font-bold rounded-xl transition-colors shadow-lg">
+                            Quero Doar via WhatsApp
+                        </a>
                     </div>
-                    <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-100 group">
-                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class="bx bx-group text-2xl text-renascer-green"></i>
+                    
+                    <!-- Card 2: Voluntariado -->
+                    <div class="bg-renascer-dark/90 backdrop-blur-md border border-white/15 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-100 group shadow-2xl">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-renascer-green/20 transition-colors">
+                            <i class="bx bx-group text-3xl text-renascer-green"></i>
                         </div>
-                        <h3 class="font-display font-bold text-2xl mb-4 text-white">Voluntariado</h3>
-                        <p class="text-renascer-gray mb-8 flex-grow">Apoie diretamente no campo. Participe ajudando nos treinos e atividades diárias.</p>
-                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20e%20tenho%20interesse%20em%20ser%20volunt%C3%A1rio%20no%20projeto%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer.%20Como%20posso%20ajudar%3F" target="_blank" class="block w-full py-4 text-center border border-white/20 hover:bg-white/10 text-white font-bold rounded-xl transition-colors">Quero Ajudar</a>
+                        <span class="text-xs uppercase tracking-wider text-renascer-green font-bold mb-1">Engajamento Comunitário</span>
+                        <h3 class="font-display font-bold text-2xl mb-3 text-white">Voluntariado</h3>
+                        <p class="text-renascer-gray mb-6 flex-grow text-sm leading-relaxed">
+                            Doe seu tempo e habilidades. Precisamos de apoio em dias de treino, organização de eventos, logística e incentivo aos atletas.
+                        </p>
+                        
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 mb-6 text-xs text-renascer-gray space-y-1">
+                            <span class="text-white font-semibold block">Como participar:</span>
+                            <p>Envie uma mensagem contando como gostaria de somar com as crianças do Renascer.</p>
+                        </div>
+
+                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20e%20tenho%20interesse%20em%20ser%20volunt%C3%A1rio%20no%20projeto%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer.%20Como%20posso%20ajudar%3F" target="_blank" rel="noopener noreferrer" class="block w-full py-4 text-center border border-white/30 hover:bg-white/10 text-white font-bold rounded-xl transition-colors">
+                            Quero Ser Voluntário
+                        </a>
                     </div>
-                    <div class="bg-renascer-dark/80 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-200 group">
-                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-renascer-green/20 transition-colors">
-                            <i class="bx bx-buildings text-2xl text-renascer-green"></i>
+                    
+                    <!-- Card 3: Parcerias -->
+                    <div class="bg-renascer-dark/90 backdrop-blur-md border border-white/15 rounded-3xl p-8 md:p-10 hover:-translate-y-2 transition-transform duration-300 flex flex-col h-full reveal delay-200 group shadow-2xl">
+                        <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-renascer-green/20 transition-colors">
+                            <i class="bx bx-buildings text-3xl text-renascer-green"></i>
                         </div>
-                        <h3 class="font-display font-bold text-2xl mb-4 text-white">Parcerias</h3>
-                        <p class="text-renascer-gray mb-8 flex-grow">Empresas podem apoiar com materiais, estrutura ou patrocínio oficial.</p>
-                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Represento%20uma%20empresa%20e%20tenho%20interesse%20em%20ser%20parceiro%20ou%20patrocinador%20do%20projeto%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer." target="_blank" class="block w-full py-4 text-center border border-white/20 hover:bg-white/10 text-white font-bold rounded-xl transition-colors">Seja Parceiro</a>
+                        <span class="text-xs uppercase tracking-wider text-renascer-green font-bold mb-1">Responsabilidade Social</span>
+                        <h3 class="font-display font-bold text-2xl mb-3 text-white">Empresas Parceiras</h3>
+                        <p class="text-renascer-gray mb-6 flex-grow text-sm leading-relaxed">
+                            Comércio local, empresas e instituições podem apoiar formalmente o projeto através de patrocínio nos uniformes, doação de suprimentos ou infraestrutura.
+                        </p>
+                        
+                        <div class="p-4 rounded-xl bg-white/5 border border-white/10 mb-6 text-xs text-renascer-gray space-y-1">
+                            <span class="text-white font-semibold block">Visibilidade com Propósito:</span>
+                            <p>Associe sua marca à transformação social e ao desenvolvimento comunitário de Cidreira.</p>
+                        </div>
+
+                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Represento%20uma%20empresa%20e%20tenho%20interesse%20em%20ser%20parceiro%20ou%20patrocinador%20do%20projeto%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer." target="_blank" rel="noopener noreferrer" class="block w-full py-4 text-center border border-white/30 hover:bg-white/10 text-white font-bold rounded-xl transition-colors">
+                            Seja uma Empresa Parceira
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Transparência & Governança Institucional -->
+        <section id="transparencia" class="py-24 bg-renascer-dark border-t border-white/10">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto bg-white/[0.03] border border-white/10 rounded-3xl p-8 sm:p-12 reveal">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pb-8 border-b border-white/10">
+                        <div>
+                            <span class="text-xs font-bold tracking-widest text-renascer-green uppercase">Compromisso Ético</span>
+                            <h2 class="font-display font-bold text-3xl text-white mt-1">Transparência Institucional</h2>
+                            <p class="text-sm text-renascer-gray mt-2">
+                                Atuação idônea e respeito à confiança depositada por cada família, voluntário e apoiador.
+                            </p>
+                        </div>
+                        <div class="shrink-0">
+                            <div class="w-16 h-16 rounded-2xl bg-renascer-green/10 border border-renascer-green/30 flex items-center justify-center text-renascer-green text-3xl">
+                                <i class="bx bx-check-shield"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
+                        <div>
+                            <h3 class="font-display font-bold text-white text-base mb-2">Prestação de Contas</h3>
+                            <p class="text-xs text-renascer-gray leading-relaxed">
+                                Qualquer recurso doado é integralmente direcionado ao custeio de atividades, uniformes e lanches dos atletas do projeto.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-white text-base mb-2">Relatórios de Atividades</h3>
+                            <p class="text-xs text-renascer-gray leading-relaxed">
+                                Mantemos registros periódicos das ações, treinos e eventos realizados em benefício da comunidade de Cidreira.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="font-display font-bold text-white text-base mb-2">Canal Direto</h3>
+                            <p class="text-xs text-renascer-gray leading-relaxed">
+                                Dúvidas, informações financeiras ou esclarecimentos podem ser solicitados formalmente através de <a href="mailto:contato@renascer.org" class="text-renascer-green hover:underline">contato@renascer.org</a>.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Final CTA -->
-        <section class="relative py-32 md:py-48 flex items-center justify-center overflow-hidden">
+        <!-- Chamada Final / Propósito -->
+        <section class="relative py-28 md:py-36 flex items-center justify-center overflow-hidden">
             <div class="absolute inset-0 z-0">
-                <div class="absolute inset-0 bg-renascer-dark/85 z-10"></div>
-                <img src="assets/images/background-home.jpg" alt="Renascer" class="w-full h-full object-cover object-center scale-105" loading="lazy">
+                <div class="absolute inset-0 bg-renascer-dark/90 z-10"></div>
+                <img src="assets/images/background-home.jpg" alt="Campo do Renascer Futebol Clube" class="w-full h-full object-cover object-center scale-105" loading="lazy">
             </div>
 
             <div class="relative z-10 container mx-auto px-6 text-center reveal">
-                <h2 class="font-display font-black text-5xl md:text-7xl lg:text-8xl mb-6 text-white tracking-tighter">RENASCER</h2>
-                <p class="text-xl md:text-3xl font-medium text-renascer-light/90 max-w-3xl mx-auto mb-12 text-balance">
-                    Mais que um time.<br>Uma oportunidade de mudar caminhos.
+                <span class="text-xs font-bold tracking-widest text-renascer-green uppercase block mb-3">Junte-se a Nós</span>
+                <h2 class="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 text-white tracking-tighter">
+                    RENASCER
+                </h2>
+                <p class="text-lg sm:text-2xl md:text-3xl font-medium text-renascer-light/95 max-w-3xl mx-auto mb-10 text-balance leading-snug">
+                    Mais que um time.<br>Uma oportunidade real de mudar caminhos.
                 </p>
-                <a href="#apoio" class="inline-flex px-10 py-5 bg-white text-renascer-dark font-bold text-lg rounded-full hover:scale-105 transition-transform duration-300">
-                    APOIE O PROJETO
-                </a>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="#apoio" class="w-full sm:w-auto px-10 py-5 bg-white text-renascer-dark font-bold text-base sm:text-lg rounded-full hover:scale-105 transition-all duration-300 shadow-2xl">
+                        Apoie o Projeto
+                    </a>
+                    <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20conversar%20com%20a%20coordena%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-10 py-5 border border-white/30 text-white font-bold text-base sm:text-lg rounded-full hover:bg-white/10 transition-all duration-300">
+                        Fale com a Coordenação
+                    </a>
+                </div>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="bg-black pt-20 pb-10 border-t border-white/10">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                <!-- Brand -->
-                <div class="space-y-6">
+                
+                <!-- Identidade Institucional -->
+                <div class="space-y-5">
                     <div class="flex items-center gap-3">
-                        <img src="assets/images/logo-renascer-transparent.png" alt="Logo Renascer" class="h-12 w-auto opacity-90 rounded-md">
-                        <span class="font-display font-bold text-2xl tracking-wide text-white">RENASCER</span>
+                        <img src="assets/images/logo-renascer-transparent.png" alt="Logo Renascer Futebol Clube" class="h-12 w-auto opacity-95 rounded-md">
+                        <div class="flex flex-col">
+                            <span class="font-display font-bold text-xl tracking-wide text-white">RENASCER</span>
+                            <span class="text-[10px] tracking-widest text-renascer-gray uppercase -mt-0.5">Associação Esportiva</span>
+                        </div>
                     </div>
-                    <p class="text-renascer-gray text-sm pr-4 leading-relaxed">Transformando vidas através de apoio, educação e oportunidades. Juntos podemos fazer a diferença na nossa comunidade.</p>
+                    <p class="text-renascer-gray text-sm pr-4 leading-relaxed">
+                        Iniciativa socioesportiva sem fins lucrativos sediada em Cidreira, RS. Transformando vidas de crianças e jovens através do futebol, da disciplina e da cidadania.
+                    </p>
                 </div>
 
-                <!-- Links -->
+                <!-- Links Rápidos -->
                 <div>
-                    <h4 class="font-display font-bold text-lg mb-6 text-white">Navegação</h4>
+                    <h3 class="font-display font-bold text-base mb-5 text-white uppercase tracking-wider">Navegação</h3>
                     <ul class="space-y-3 text-sm text-renascer-gray font-medium">
                         <li><a href="#inicio" class="hover:text-white transition-colors">Início</a></li>
-                        <li><a href="#proposito" class="hover:text-white transition-colors">O Projeto</a></li>
-                        <li><a href="#impacto" class="hover:text-white transition-colors">Impacto</a></li>
+                        <li><a href="#quem-somos" class="hover:text-white transition-colors">Quem Somos</a></li>
+                        <li><a href="#historia" class="hover:text-white transition-colors">Nossa História</a></li>
+                        <li><a href="#impacto" class="hover:text-white transition-colors">Nosso Impacto</a></li>
+                        <li><a href="#galeria" class="hover:text-white transition-colors">Galeria</a></li>
                         <li><a href="#equipe" class="hover:text-white transition-colors">Equipe</a></li>
+                        <li><a href="#transparencia" class="hover:text-white transition-colors">Transparência</a></li>
                         <li><a href="#apoio" class="hover:text-white transition-colors">Como Ajudar</a></li>
                     </ul>
                 </div>
 
-                <!-- Contact -->
+                <!-- Contato Oficial -->
                 <div>
-                    <h4 class="font-display font-bold text-lg mb-6 text-white">Contato</h4>
+                    <h3 class="font-display font-bold text-base mb-5 text-white uppercase tracking-wider">Contato Oficial</h3>
                     <ul class="space-y-4 text-sm text-renascer-gray font-medium">
                         <li class="flex items-center gap-3">
-                            <i class="bx bx-envelope text-lg text-renascer-green"></i>
+                            <i class="bx bx-envelope text-lg text-renascer-green shrink-0"></i>
                             <a href="mailto:contato@renascer.org" class="hover:text-white transition-colors">contato@renascer.org</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <i class="bx bx-phone text-lg text-renascer-green"></i>
-                            <a href="tel:+555195076696" class="hover:text-white transition-colors">(51) 9507-6696</a>
+                            <i class="bx bx-phone text-lg text-renascer-green shrink-0"></i>
+                            <a href="https://wa.me/5551996076696" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">(51) 99607-6696</a>
                         </li>
                         <li class="flex items-start gap-3">
-                            <i class="bx bx-map text-lg text-renascer-green mt-0.5"></i>
-                            <span>Cidreira <br> Rio Grande do Sul</span>
+                            <i class="bx bx-map text-lg text-renascer-green shrink-0 mt-0.5"></i>
+                            <span>Cidreira, Rio Grande do Sul<br><span class="text-xs text-renascer-gray/80">Litoral Norte Gaúcho</span></span>
                         </li>
                     </ul>
                 </div>
 
-                <!-- Socials -->
+                <!-- Redes Sociais Oficiais -->
                 <div>
-                    <h4 class="font-display font-bold text-lg mb-6 text-white">Redes Sociais</h4>
-                    <div class="flex gap-4">
-                        <a href="https://www.instagram.com/assrenascerofc/?hl=pt-br" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Siga no Instagram">
+                    <h3 class="font-display font-bold text-base mb-5 text-white uppercase tracking-wider">Canais Oficiais</h3>
+                    <div class="flex gap-3 mb-6">
+                        <a href="https://www.instagram.com/assrenascerofc/?hl=pt-br" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors text-white" aria-label="Acompanhe o Renascer no Instagram">
                             <i class="bx bxl-instagram text-xl"></i>
                         </a>
-                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Fale pelo WhatsApp">
+                        <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors text-white" aria-label="Fale conosco pelo WhatsApp">
                             <i class="bx bxl-whatsapp text-xl"></i>
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=100073883275130" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors" aria-label="Siga no Facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100073883275130" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-renascer-green hover:text-white transition-colors text-white" aria-label="Curta nossa página no Facebook">
                             <i class="bx bxl-facebook text-xl"></i>
                         </a>
                     </div>
+                    <div class="p-3.5 rounded-xl bg-white/5 border border-white/10 text-xs text-renascer-gray">
+                        <span class="text-white font-semibold block mb-1">Atendimento Comunitário</span>
+                        Horários de treino e inscrições comunicados através de nossos canais oficiais.
+                    </div>
                 </div>
+
             </div>
 
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-renascer-gray font-medium">
-                <p>© 2026 Associação Esportiva Renascer. Todos os direitos reservados.</p>
-                <p>Desenvolvido para transformação social</p>
+                <p>© 2026 Associação Esportiva Renascer / Renascer Futebol Clube. Todos os direitos reservados.</p>
+                <p>Cidreira • Rio Grande do Sul • Transformação Social através do Esporte</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20conhecer%20mais%20sobre%20o%20projeto." target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-[#20bd5a] transition-all duration-300 z-50 animate-[bounce_2s_infinite]" aria-label="Fale pelo WhatsApp">
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/5551996076696?text=Ol%C3%A1!%20Acessei%20o%20site%20da%20Associa%C3%A7%C3%A3o%20Esportiva%20Renascer%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 hover:bg-[#20bd5a] transition-all duration-300 z-50 animate-[bounce_2s_infinite]" aria-label="Fale diretamente pelo WhatsApp Oficial do Renascer">
         <i class="bx bxl-whatsapp text-3xl"></i>
     </a>
 
